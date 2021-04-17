@@ -86,7 +86,7 @@ public class vtnPrincipal extends JFrame{
         flujoBits.clear();
         flujoBits2.clear();
         agregarFuncionalidadItems(dibujarGrafico,titulo,2);
-        random = new JMenuItem("Randomizar");
+        random = new JMenuItem("Aleatorio");
             agregarFuncionalidadItems(random,titulo,3);
         instrucciones = new JMenuItem("Soporte");     
             agregarFuncionalidadItems(instrucciones,titulo,4);
@@ -96,7 +96,7 @@ public class vtnPrincipal extends JFrame{
         salir.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
-                int resp = JOptionPane.showConfirmDialog(null,"¿Está seguro de querer salir?","¡Atención!",0,0,new ImageIcon(ImageLoader.class.getResource("x.gif")));
+                int resp = JOptionPane.showConfirmDialog(null,"¿Realmente quieres cerrar la aplicación?","Salir",0,0,new ImageIcon(ImageLoader.class.getResource("x.gif")));
                 if(resp==0)
                     System.exit(0);
             }                        
@@ -1970,7 +1970,7 @@ public class vtnPrincipal extends JFrame{
                         if(baw1.get(i).pintado)
                             flujoBits.add(flujoBits.get(i-1));                              
                         else{
-                            if(flujoBits.get(i-1)==0)
+                            if((int)flujoBits.get(i-1)==0)
                                 flujoBits.add(1);
                             else
                                 flujoBits.add(0);
@@ -1987,7 +1987,7 @@ public class vtnPrincipal extends JFrame{
                         if(baw1.get(i).pintado ==true)
                             flujoBits.add(flujoBits.get(i-1));                              
                         else{
-                            if(flujoBits.get(i-1)==0)
+                            if((int)flujoBits.get(i-1)==0)
                                 flujoBits.add(1);
                             else
                                 flujoBits.add(0);
