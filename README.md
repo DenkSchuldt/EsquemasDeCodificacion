@@ -13,8 +13,6 @@ que llega (alto o bajo). El número máximo de bits en el flujo se ha establecid
 
 <img src='./preview/simulation.gif' alt=''/>
 <br/>
-<br/>
-<br/>
 
 #### 2) Dibujar gráfico
 
@@ -25,16 +23,12 @@ también el sistema de codificación dibujado.
 
 <img src='./preview/draw.png' alt=''/>
 <br/>
-<br/>
-<br/>
 
 #### 3) Aleatorio
 
 Esta opción permite generar un gráfico, el cual corresponde a un sistema de codificación y a un flujo de bits que se origina de manera aleatoria. La opción genera el gráfico, y mediante un botón, revela el flujo de bits simulado.
 
 <img src='./preview/random.gif' alt=''/>
-<br/>
-<br/>
 <br/>
 
 #### Soporte
